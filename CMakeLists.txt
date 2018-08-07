@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.6)
+add_executable(main.exe main.cpp)
+SET(games 1, 2, 3, 4)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+list(GET games 0 out)
+MESSAGE(${out})
